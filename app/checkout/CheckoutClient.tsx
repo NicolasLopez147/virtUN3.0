@@ -10,7 +10,7 @@ import { toast } from "react-hot-toast";
 import Button from "../components/Button";
 
 const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string
+  `${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`
 );
 
 const CheckoutClient = () => {
