@@ -30,7 +30,7 @@ export default async function handler(
     event = stripe.webhooks.constructEvent(
       buf,
       sig,
-      process.env.STRIPE_WEBHOOK_SECRET!
+      process.env.STRIPE_WEBHOOK_SECRET as string
     );
   } catch (err) {
     return res.status(400).send("Webook error" + err);
