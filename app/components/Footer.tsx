@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <div className="flex flex-col justify-between pt-16 pb-8 md:flex-row">
           <FooterList>
-            <h3 className="mb-2 text-base font-bold">Shop Categories</h3>
+            <h3 className="mb-2 text-base font-bold">Categorias</h3>
             <Link href="#">SmartPhone</Link>
             <Link href="#">Portátiles</Link>
             <Link href="#">Pc de escritorio</Link>
